@@ -1,0 +1,97 @@
+@import "var";
+*{
+  box-sizing: border-box;
+}
+body{
+  margin:0;
+  padding:0;
+}
+.response(@type,@i:0) when(@i<=@col){
+  &>.row>.col-@{type}-@{i}{
+    float: left;  width:@i/@col*100%;
+  }
+  &-fluid>.row>.col-@{type}-@{i}{
+    float: left;  width:@i/@col*100%;
+  }
+  .response(@type,@i+1);
+}
+.clear{
+  &:before,&:after{
+    content: "";
+    display: block;
+  }
+  &:after{
+    clear: both;
+  }
+}
+
+.public(){
+  width:100%;
+  margin: 0 auto;
+  &>.row{
+    width:100%;.clear();
+  }
+  &-fluid{
+    width:100%;  .clear();
+  }
+  &-fluid>.row{
+    width:100%;  .clear();
+  }
+}
+.container{
+  @media screen and (max-width:@num1){
+    .public();
+    &>.row>.col-s-v{
+      display:block;
+    }
+    &>.row>.col-s-h{
+      display:none;
+    }
+    &-fluid>.row>.col-s-v{
+      display:block;
+    }
+    &-fluid>.row>.col-s-h{
+      display:none;
+    }
+    .response(s);
+  }
+}
+
+.container{
+  @media screen and (min-width:@num1) and (max-width: @num2){
+    .public();
+    width:@num4*1px;
+    &>.row>.col-m-v{
+      display:block;
+    }
+    &>.row>.col-m-h{
+      display:none;
+    }
+    &-fluid>.row>.col-m-v{
+      display:block;
+    }
+    &-fluid>.row>.col-m-h{
+      display:none;
+    }
+    .response(m);
+  }
+}
+.container{
+  @media screen and (min-width: @num2){
+    .public();
+    width:@num5*1px;
+    &>.row>.col-l-v{
+      display:block;
+    }
+    &>.row>.col-l-h{
+      display:none;
+    }
+    &-fluid>.row>.col-l-v{
+      display:block;
+    }
+    &-fluid>.row>.col-l-h{
+      display:none;
+    }
+    .response(l);
+  }
+}

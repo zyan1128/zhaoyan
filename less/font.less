@@ -1,0 +1,94 @@
+@font-face {font-family: 'apfont';
+  src: url('../fonts/iconfont.eot'); /* IE9*/
+  src: url('../fonts/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../fonts/iconfont.woff') format('woff'), /* chrome、firefox */
+  url('../fonts/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url('../fonts/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+@name1:phone;
+@name2:mail;
+@name3:sex;
+@name4:date;
+@name5:name;
+@name6:close;
+@name7:zuo;
+@name8:you;
+@name9:minzu;
+@name10:kaishi;
+@name11:three;
+@name12:you;
+@name13:zuo;
+@name14:nv;
+@name15:xia;
+@name16:shang;
+@name17:zuan;
+@name18:school;
+@name19:zhuanye;
+@name20:xuewei;
+@name21:zhiye;
+@name22:xingwei;
+@name23:enjoy;
+@name24:gotop;
+
+@con1:e600;
+@con2:e601;
+@con3:e602;
+@con4:e603;
+@con5:e604;
+@con6:e605;
+@con7:e606;
+@con8:e607;
+@con9:e608;
+@con10:e609;
+@con11:e60a;
+@con12:e60b;
+@con13:e60c;
+@con14:e60d;
+@con15:e60e;
+@con16:e60f;
+@con17:e610;
+@con18:e616;
+@con19:e613;
+@con20:e611;
+@con21:e612;
+@con22:e615;
+@con23:e617;
+@con24:e618;
+
+.for(@i:1) when(@i<=24){
+  @n:'name@{i}';
+  @n1:@@n;
+  @c:'con@{i}';
+  @c1:@@c;
+  *[data-role=@{n1}]:before{
+    font-family: apfont;
+    content:'\@{c1}';
+  }
+  *[data-role=@{n1}][icon-pos=top]:before{
+    display: block;
+    font-family: apfont;
+    content:'\@{c1}';
+    text-align:center;
+  }
+  *[data-role=@{n1}][icon-pos=right]:before{
+    font-family: apfont;
+    content:'';
+  }
+  *[data-role=@{n1}][icon-pos=right]:after{
+    font-family: apfont;
+    content:'\@{c1}';
+  }
+  *[data-role=@{n1}][icon-pos=bottom]:before{
+    font-family: apfont;
+    content:'';
+  }
+  *[data-role=@{n1}][icon-pos=bottom]:after{
+    display: block;
+    font-family: apfont;
+    content:'\@{c1}';
+  }
+  .for(@i+1);
+}
+.for();
+
