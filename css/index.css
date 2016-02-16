@@ -141,12 +141,19 @@ h1,h2,h3,h4,h5,h6,a,li,ul{
     color: #C6C3C5;
     font-size: 20px;padding: 3% 10%;
 }
-div[class*=alll] a{
+div[data-filter*=web] a{
     border:1px solid #999;
 }
 .card a:hover{
     color: #FFF;
 }
+#item .row div[data-cat*=web]{
+    display: block;
+}
+.item .col-s-12.col-m-6.col-l-4{
+    display: none;
+}
+
 /*---------------点击查看大图----*/
 .imgbox{
     position: fixed;z-index:999;
