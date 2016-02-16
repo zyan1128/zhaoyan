@@ -653,3 +653,138 @@
   font-family: apfont;
   content: '\e618';
 }
+*[data-role=erweima]:before {
+  font-family: apfont;
+  content: '\e619';
+}
+*[data-role=erweima][icon-pos=top]:before {
+  display: block;
+  font-family: apfont;
+  content: '\e619';
+  text-align: center;
+}
+*[data-role=erweima][icon-pos=right]:before {
+  font-family: apfont;
+  content: '';
+}
+*[data-role=erweima][icon-pos=right]:after {
+  font-family: apfont;
+  content: '\e619';
+}
+*[data-role=erweima][icon-pos=bottom]:before {
+  font-family: apfont;
+  content: '';
+}
+*[data-role=erweima][icon-pos=bottom]:after {
+  display: block;
+  font-family: apfont;
+  content: '\e619';
+}
+*[data-role=qq]:before {
+  font-family: apfont;
+  content: '\e61a';
+}
+*[data-role=qq][icon-pos=top]:before {
+  display: block;
+  font-family: apfont;
+  content: '\e61a';
+  text-align: center;
+}
+*[data-role=qq][icon-pos=right]:before {
+  font-family: apfont;
+  content: '';
+}
+*[data-role=qq][icon-pos=right]:after {
+  font-family: apfont;
+  content: '\e61a';
+}
+*[data-role=qq][icon-pos=bottom]:before {
+  font-family: apfont;
+  content: '';
+}
+*[data-role=qq][icon-pos=bottom]:after {
+  display: block;
+  font-family: apfont;
+  content: '\e61a';
+}
+*[data-role=weixin]:before {
+  font-family: apfont;
+  content: '\e61d';
+}
+*[data-role=weixin][icon-pos=top]:before {
+  display: block;
+  font-family: apfont;
+  content: '\e61d';
+  text-align: center;
+}
+*[data-role=weixin][icon-pos=right]:before {
+  font-family: apfont;
+  content: '';
+}
+*[data-role=weixin][icon-pos=right]:after {
+  font-family: apfont;
+  content: '\e61d';
+}
+*[data-role=weixin][icon-pos=bottom]:before {
+  font-family: apfont;
+  content: '';
+}
+*[data-role=weixin][icon-pos=bottom]:after {
+  display: block;
+  font-family: apfont;
+  content: '\e61d';
+}
+*[data-role=app]:before {
+  font-family: apfont;
+  content: '\e61b';
+}
+*[data-role=app][icon-pos=top]:before {
+  display: block;
+  font-family: apfont;
+  content: '\e61b';
+  text-align: center;
+}
+*[data-role=app][icon-pos=right]:before {
+  font-family: apfont;
+  content: '';
+}
+*[data-role=app][icon-pos=right]:after {
+  font-family: apfont;
+  content: '\e61b';
+}
+*[data-role=app][icon-pos=bottom]:before {
+  font-family: apfont;
+  content: '';
+}
+*[data-role=app][icon-pos=bottom]:after {
+  display: block;
+  font-family: apfont;
+  content: '\e61b';
+}
+*[data-role=weibo]:before {
+  font-family: apfont;
+  content: '\e61c';
+}
+*[data-role=weibo][icon-pos=top]:before {
+  display: block;
+  font-family: apfont;
+  content: '\e61c';
+  text-align: center;
+}
+*[data-role=weibo][icon-pos=right]:before {
+  font-family: apfont;
+  content: '';
+}
+*[data-role=weibo][icon-pos=right]:after {
+  font-family: apfont;
+  content: '\e61c';
+}
+*[data-role=weibo][icon-pos=bottom]:before {
+  font-family: apfont;
+  content: '';
+}
+*[data-role=weibo][icon-pos=bottom]:after {
+  display: block;
+  font-family: apfont;
+  content: '\e61c';
+}

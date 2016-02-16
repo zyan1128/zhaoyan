@@ -16,10 +16,15 @@
   -moz-osx-font-smoothing: grayscale;
 }
 .icon-kaishi:before { content: "\e609"; }
+.icon-erweima:before { content: "\e619"; }
 .icon-nv:before { content: "\e60d"; }
+.icon-qq:before { content: "\e61a"; }
+.icon-app:before { content: "\e61b"; }
+.icon-weibo:before { content: "\e61c"; }
 .icon-xueweilimao:before { content: "\e611"; }
 .icon-you:before { content: "\e60b"; }
 .icon-vocation:before { content: "\e612"; }
+.icon-weixin:before { content: "\e61d"; }
 .icon-zuozuo:before { content: "\e60c"; }
 .icon-dianhua:before { content: "\e600"; }
 .icon-youxiang:before { content: "\e601"; }

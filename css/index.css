@@ -438,6 +438,15 @@ tr>td{
     position: fixed;right:10px;bottom:10px;font-size: 30px;
     color:#fff;cursor: pointer;display: none;
 }
+.erweima{
+    position: fixed;right:10px;bottom:50%;font-size: 20px;
+    color:#fff;cursor: pointer;
+}
+.erweima img{
+    width:100px;height:100px;
+    position: absolute;right:25px;bottom:-50px;
+    display: none;
+}
 @media screen and (max-width: 700px) {
     .item>div[class*=row]>div[class*=col]>img{
         width:80%;height:80%;

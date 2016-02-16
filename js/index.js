@@ -209,5 +209,8 @@ $(function(){
         }
         console.log($(window).scrollTop())
     });
+    $('.erweima').click(function(){
+        $(this).find('img').slideToggle();
+    });
 })
 
