@@ -209,8 +209,15 @@ $(function(){
         }
         console.log($(window).scrollTop())
     });
-    $('.erweima').click(function(){
+
+
+    $('#erweima').click(function(){
         $(this).find('img').slideToggle();
+        $('#appp img').hide();
+    });
+    $('#appp').click(function(){
+        $(this).find('img').slideToggle();
+        $('#erweima img').hide();
     });
 })
 

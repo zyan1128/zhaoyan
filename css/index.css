@@ -438,9 +438,12 @@ tr>td{
     position: fixed;right:10px;bottom:10px;font-size: 30px;
     color:#fff;cursor: pointer;display: none;
 }
-.erweima{
+.saosao{
     position: fixed;right:10px;bottom:50%;font-size: 20px;
     color:#fff;cursor: pointer;
+}
+.erweima{
+    position: relative;margin-bottom: 10px;
 }
 .erweima img{
     width:100px;height:100px;
