@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>响应式测试</title>
+	<!-- 新 Bootstrap 核心 CSS 文件 -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+
+	<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+	<script src="js/jquery-1.11.3.js"></script>
+
+	<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+	<script src="js/bootstrap.min.js"></script>
+	<style type="text/css">
+	*{margin:0;padding:0;}
+	ul,ol,li{list-style: none;}
+	.clearfix{zoom:1;}
+	.clearfix:after{content:'.';display: block;height: 0;clear: both;visibility: hidden;}
+	header{background: url("img/banner.jpg");color: #fff;}
+	header a{color:#fff;text-decoration: none;font-size: 18px; margin:0 20px;}
+	.head{font-size: 20px;}
+	.home{background: rgba(158, 147, 107, 0.51);width:8%;padding:30px 0px;}
+	.nav{background: rgba(255, 255, 255, 0.32);padding:30px 20px;width:92%;}
+	.fleft,.menu li,.share li{float:left;}
+	.fright{float:right;}
+	.banner-info{font-family: 'Niconne', cursive;font-size:8em;text-align: center;line-height:3em;}
+	.fourth{width:25%;float:left;background: rgba(166, 25, 46, 0.57);padding:2%;}
+
+	.flexx{display: flex;display: -webkit-flex;width: 100%;height:44px;background: #666;color:#fff;}
+	.zuo{float:left;}
+	.you{float:right;}
+	.zhong{flex:1;-webkit-flx:1;text-align: center;}
+	@media screen and (max-width: 768px) {
+		.head{font-size: 10px;}
+		.top-nev{display: none;}
+	}
+
+
+	/*选项卡*/
+	.clear{clear: both;}
+	.one{width: 900px;margin: 120px auto;}
+	.btn-list{float: left; width:270px; margin: 10px; font-size: 2em; text-align: center; background: green; }
+	.show{height: 400px; margin: 20px 0; transition:all .5s ease; }
+	.show-list{width: 900px; height: 400px; background: red; text-align: center; font-size: 3em; overflow: hidden; background-size: cover; display: none; }
+	.no{display: block; }
+	</style>
+	<script type="text/javascript">
+		$(function(){
+			//选项卡
+			$('.btn-list').click(function(){
+				var index=$(this).index();
+				$('.show-list').css('display','none');
+				// $('.show-list').eq(index).css('display','block');//方法1
+				// $('.show-list:eq('+index+')').css('display','block');//方法2
+				$($('.show-list')[index]).css('display','block');//方法3
+			})
+			// var btn=document.getElementsByClassName('btn-list');
+			// var show=document.getElementsByClassName('show-list');
+
+			// 方法1
+			// for (var i = 0; i < btn.length; i++) {
+			// 	btn[i].index=i;
+			// 	btn[i].onclick=function(){
+			// 		for (var i = 0; i < show.length; i++) {
+			// 			show[i].style.display='none';
+			// 		}
+			// 		show[this.index].style.display='block';
+			// 	};		
+			// }
+			// 方法2
+			// var now=show[0];
+			// for (var i = 0; i < btn.length; i++) {
+			// 	btn[i].index=i;
+			// 	btn[i].onclick=function(){
+			// 		now.style.display='none';
+			// 		show[this.index].style.display='block';
+			// 		now=show[this.index];
+			// 	};		
+			// }
+		})
+	</script>
+</head>
+<body>
+	<header>
+		<nav>
+			<div class="container head">
+				<div class="top-nev clearfix">
+					<div class="home fleft"><a href="#" class="glyphicon glyphicon-home"></a></div>
+					<div class="nav fleft">
+						<div class="menu fleft clearfix">
+							<ul>
+								<li><a href="#">About</a></li>
+								<li><a href="#">About</a></li>
+								<li><a href="#">About</a></li>
+								<li><a href="#">About</a></li>
+								<li><a href="#">About</a></li>
+							</ul>
+						</div>
+						<div class="share fright">
+							<ul>
+								<li><a href="#"  class="glyphicon glyphicon-home"></a></li>
+								<li><a href="#"  class="glyphicon glyphicon-home"></a></li>
+								<li><a href="#"  class="glyphicon glyphicon-home"></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+					
+				<div class="banner-info">Gardening</div>
+
+				<div class="list">
+					<div class="fourth">
+						<span class="glyphicon glyphicon-leaf"></span>					
+						<h4>Claritas est etiam</h4>
+					</div>
+					<div class="fourth">
+						<span class="glyphicon glyphicon-leaf"></span>					
+						<h4>Claritas est etiam</h4>
+					</div>
+					<div class="fourth">
+						<span class="glyphicon glyphicon-leaf"></span>					
+						<h4>Claritas est etiam</h4>
+					</div>
+					<div class="fourth">
+						<span class="glyphicon glyphicon-leaf"></span>					
+						<h4>Claritas est etiam</h4>
+					</div>
+				</div>
+			</div>
+		</nav>
+	</header>	
+	<section>
+		<div class="one">
+			<div class="btn">
+				<div class="btn-list">1</div>
+				<div class="btn-list">2</div>
+				<div class="btn-list">3</div>
+				<div class="clear"></div>
+			</div>
+			<div class="show">
+				<div class="show-list no">111111111</div>
+				<div class="show-list">222222222222222</div>
+				<div class="show-list">333333333</div>
+			</div>
+		</div>
+	</section>
+	<section>
+		<div class="flexx">
+			<div class="zuo">左</div>
+			<div class="zhong">中</div>
+			<div class="you">右</div>
+		</div>
+	</section>
+</body>
+</html>
